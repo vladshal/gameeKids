@@ -9,10 +9,21 @@ mc = minecraft.Minecraft.create()
 mcDrawing = MinecraftDrawing(mc)
 
 
-def main():
+
+def prepare():
+    mc.setBlocks(0,0,0,15,0,15,block.TNT)
+    mc.setBlocks(-1,0,16,16,5,16,block.BEDROCK)
+    mc.setBlocks(-1,0,0,-1,5,0,block.BEDROCK)
+    
+def game():
     pass
-
-
-
+        
+def main():
+    prepare()
+    game()
+    
 main()
+    
+    
+
 
