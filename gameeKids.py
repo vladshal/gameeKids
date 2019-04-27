@@ -49,7 +49,7 @@ def prepare():
     
 def game():
     b = mc.player.getPos()
-    sleep(0.2)   
+    sleep(0.1)   
     mc.setBlock(b.x,b.y-1,b.z,block.AIR)   
 def main():
     prepare()
